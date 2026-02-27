@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --sillage-pink: #fca5f1;
+  --sillage-cyan: #97eaea;
+  --sillage-lavender: #e2c7fc;
+  --sillage-gray: #807f7a;
+  --sillage-dark: #1b1521;
+  --sillage-light: #f4f4f4;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  color: var(--sillage-dark);
+  background: var(--sillage-light);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, sans-serif;
+}
+
+@layer components {
+  .btn-primary {
+    @apply inline-flex items-center gap-2 px-6 py-3 bg-sillage-dark text-white rounded-full font-medium transition-all duration-300 hover:opacity-90 hover:scale-105;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center gap-2 px-6 py-3 bg-white text-sillage-dark rounded-full font-medium border border-sillage-dark/10 transition-all duration-300 hover:border-sillage-dark/30;
+  }
+
+  .card {
+    @apply bg-white rounded-2xl p-6 shadow-sm border border-sillage-dark/5 transition-all duration-300 hover:shadow-md;
+  }
+
+  .input-field {
+    @apply w-full px-4 py-3 rounded-xl border border-sillage-dark/10 focus:outline-none focus:ring-2 focus:ring-sillage-pink/50 focus:border-sillage-pink transition-all;
+  }
+
+  .section-label {
+    @apply inline-block px-4 py-2 bg-sillage-lavender/30 text-sillage-dark rounded-full text-sm font-medium;
+  }
+
+  .gradient-text {
+    @apply bg-gradient-to-r from-sillage-pink via-sillage-lavender to-sillage-cyan bg-clip-text text-transparent;
+  }
+}

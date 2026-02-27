@@ -1,0 +1,27 @@
+{
+  "name": "erd_generator",
+  "version": "1.0.0",
+  "description": "Visualiseur de diagrammes entité-relation à partir de schemas SQL",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@vercel/analytics": "^1.6.1",
+    "lucide-react": "^0.575.0",
+    "next": "14",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4",
+    "reactflow": "^11.11.4"
+  },
+  "devDependencies": {
+    "@types/node": "^25.3.2",
+    "@types/react": "^19.2.14",
+    "autoprefixer": "^10.4.27",
+    "postcss": "^8.5.6",
+    "tailwindcss": "3.4.0",
+    "typescript": "^5.9.3"
+  }
+}
