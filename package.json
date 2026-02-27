@@ -12,6 +12,7 @@
     "@vercel/analytics": "^1.6.1",
     "lucide-react": "^0.575.0",
     "next": "14",
+    "openai": "^6.25.0",
     "react": "^19.2.4",
     "react-dom": "^19.2.4",
     "reactflow": "^11.11.4"
