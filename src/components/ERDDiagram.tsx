@@ -233,12 +233,6 @@ export default function ERDDiagram({ schema }: ERDDiagramProps) {
           width: 20,
           height: 20,
         },
-        markerStart: {
-          type: MarkerType.Circle,
-          color: colorSet.marker,
-          width: 10,
-          height: 10,
-        },
         label: `${relation.from.column}`,
         labelStyle: { 
           fontSize: 11, 
